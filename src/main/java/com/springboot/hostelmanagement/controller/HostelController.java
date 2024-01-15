@@ -67,10 +67,6 @@ public class HostelController {
 
     }
 
-    //    public ResponseEntity<Hostel> updateHostel(@RequestBody Hostel hostel){
-//        Hostel updatedHostel = hostelService.updateHostel(hostel);
-//        return ResponseEntity.ok(updatedHostel);
-//    }
     @DeleteMapping("/{id}")
     public void deleteHostel(@PathVariable Integer id) {
         hostelService.deleteHostel(id);
